@@ -1,0 +1,48 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://main_scene.gd" type="Script" id=1]
+
+[node name="screen" type="Node2D"]
+
+script/script = ExtResource( 1 )
+__meta__ = { "__editor_plugin_screen__":"Script" }
+num_bunnies = 250
+
+[node name="gui_layer" type="CanvasLayer" parent="."]
+
+layer = 1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+
+[node name="fps_label" type="Label" parent="gui_layer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 13.0
+text = "FPS:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="count_label" type="Label" parent="gui_layer"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 547.0
+margin/top = 2.0
+margin/right = 593.0
+margin/bottom = 15.0
+text = "COUNT:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+

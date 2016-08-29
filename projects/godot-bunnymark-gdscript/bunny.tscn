@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://wabbit_alpha.png" type="Texture" id=1]
+[ext_resource path="res://bunny.gd" type="Script" id=2]
+
+[node name="bunny" type="Sprite"]
+
+texture = ExtResource( 1 )
+centered = false
+script/script = ExtResource( 2 )
+__meta__ = { "__editor_plugin_screen__":"2D" }
+
+
